@@ -7,8 +7,8 @@ const finished = util.promisify(stream.finished)
 const rs = fs.createReadStream(__filename)
 
 async function run() {
-    await finished(rs)
-    console.log('Stream is done reading.')
+  await finished(rs)
+  console.log('Stream is done reading.')
 }
 
 run().catch(console.error)
